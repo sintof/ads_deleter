@@ -26,7 +26,7 @@ async def neweventh(message: types.Message):
 
 kb = types.InlineKeyboardButton("Guruhga qo'hish", url=f'https://t.me/{username}?startgroup=hmm')
 kbs= types.InlineKeyboardMarkup(resize_keyboard=True).add(kb)
-
+print("test")
 
 
 
