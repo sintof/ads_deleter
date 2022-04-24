@@ -13,8 +13,19 @@ dp = Dispatcher(bot, storage = MemoryStorage())
 db = sqlite3.connect("new.db")
 cursor = db.cursor()
 
-class Ss(StatesGroup):
-    
+class States(StatesGroup):
+    first = State()
+
+
+
+@dp.message_handler()
+async def test(m):
+    await m.answer("Hi bro, everything is working")
+
+
+
+
+
 
 
 if __name__ == '__main__':
